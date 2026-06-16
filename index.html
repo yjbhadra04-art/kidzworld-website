@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kidz World | Building Future-Ready Minds</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#FAF8F3;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#B08D57;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(
+rgba(0,0,0,0.35),
+rgba(0,0,0,0.35)),
+url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+background:#B08D57;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#B08D57;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.programs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#B08D57;
+}
+
+.stats{
+background:#B08D57;
+color:white;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+text-align:center;
+padding:60px 10%;
+}
+
+.stat h2{
+font-size:48px;
+}
+
+.testimonials{
+background:white;
+}
+
+.testimonial{
+max-width:700px;
+margin:auto;
+text-align:center;
+font-style:italic;
+font-size:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Kidz World</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Programs</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Building Future-Ready Minds</h1>
+
+<p>
+Where learning begins, confidence grows,
+and every child feels at home.
+</p>
+
+<a href="#" class="btn">Book a Visit</a>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">About Kidz World</h2>
+
+<div class="about">
+<div>
+<h3>15 Years of Excellence</h3>
+
+<p>
+Kidz World is where strong foundations are built.
+With expert educators, engaging learning methods,
+and a nurturing environment, we help children
+develop confidence, creativity, and lifelong learning skills.
+</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74">
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Our Programs</h2>
+
+<div class="programs">
+
+<div class="card">
+<h3>Playgroup</h3>
+<p>Fun-filled early learning experiences.</p>
+</div>
+
+<div class="card">
+<h3>Nursery</h3>
+<p>Building essential academic and social skills.</p>
+</div>
+
+<div class="card">
+<h3>Jolly Phonics</h3>
+<p>Interactive phonics and literacy development.</p>
+</div>
+
+<div class="card">
+<h3>Abacus</h3>
+<p>Enhancing concentration and mental math skills.</p>
+</div>
+
+<div class="card">
+<h3>Vedic Maths</h3>
+<p>Fast calculation techniques and logical thinking.</p>
+</div>
+
+<div class="card">
+<h3>Art Classes</h3>
+<p>Encouraging imagination and creativity.</p>
+</div>
+
+</div>
+</section>
+
+<section class="stats">
+<div class="stat">
+<h2>15+</h2>
+<p>Years of Excellence</p>
+</div>
+
+<div class="stat">
+<h2>1000+</h2>
+<p>Happy Learners</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Passionate Teaching</p>
+</div>
+</section>
+
+<section class="section testimonials">
+<h2 class="section-title">What Parents Say</h2>
+
+<div class="testimonial">
+"An amazing learning environment with caring teachers.
+My child loves coming to Kidz World every day."
+</div>
+</section>
+
+<section class="section contact">
+<h2 class="section-title">Visit Kidz World</h2>
+
+<p>Thane, Maharashtra</p>
+<p>📞 +91 XXXXX XXXXX</p>
+<p>✉️ info@kidzworld.com</p>
+
+<a href="#" class="btn">Enquire Now</a>
+</section>
+
+<footer>
+© 2026 Kidz World | Building Future-Ready Minds
+</footer>
+<script>
+console.log("Welcome to Kidz World");
+</script>
+
+</body>
+</html>
