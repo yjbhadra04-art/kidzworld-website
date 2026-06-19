@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kidz World | Building Future-Ready Minds</title>
+<title>Kidz World | Building Future-Ready Minds</title><style>
 
-<style>
 *{
 margin:0;
 padding:0;
@@ -28,7 +26,7 @@ align-items:center;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
 position:sticky;
 top:0;
-z-index:100;
+z-index:1000;
 }
 
 .logo{
@@ -44,36 +42,59 @@ margin-left:25px;
 font-weight:500;
 }
 
+nav a:hover{
+color:#B08D57;
+}
+
 .hero{
+position:relative;
 height:90vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-padding:20px;
-background:linear-gradient(
-rgba(0,0,0,0.35),
-rgba(0,0,0,0.35)),
-url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9');
-background-size:cover;
-background-position:center;
+overflow:hidden;
 color:white;
 }
 
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:-1;
+}
+
+.hero-content{
+max-width:800px;
+padding:20px;
+}
+
 .hero-content h1{
-font-size:55px;
+font-size:60px;
 margin-bottom:20px;
 }
 
 .hero-content p{
 font-size:22px;
-max-width:700px;
-margin:auto;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-margin-top:30px;
 padding:14px 30px;
 background:#B08D57;
 color:white;
@@ -163,161 +184,103 @@ color:white;
 text-align:center;
 padding:25px;
 }
-</style>
-</head>
 
-<body>
+footer a{
+color:white;
+text-decoration:none;
+}
 
-<header>
-<div class="logo">Kidz World</div>
+@media(max-width:768px){
 
-<nav>
-<a href="#">Home</a>
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+margin:8px;
+}
+}
+
+</style></head><body><header><div class="logo">Kidz World</div><nav>
+<a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="programs.html">Programs</a>
-<a href="#">Gallery</a>
+<a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
-</nav>
-</header>
-
-<section class="section">
-
-<h2 class="section-title">Life at Kidz World</h2>
-
-<video
-width="100%"
-autoplay
-muted
-loop
-playsinline
-style="
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
-">
-    <source src="welcome.mp4" type="video/mp4">
-</video>
-
-</section>
-
-<section class="section">
-<h2 class="section-title">About Kidz World</h2>
-
-<div class="about">
-<div>
-<h3>15 Years of Excellence</h3>
-
-<p>
+</nav></header><section class="hero"><video autoplay muted loop playsinline class="hero-video">
+<source src="welcome.mp4" type="video/mp4">
+</video><div class="hero-content"><h1>Building Future-Ready Minds</h1><p>
+Where early learning begins, creativity flourishes,
+and children develop confidence for life.
+</p><a href="contact.html" class="btn">
+Book a Visit
+</a></div></section><section class="section"><h2 class="section-title">About Kidz World</h2><div class="about"><div><h3>15 Years of Excellence</h3><p>
 Kidz World is where strong foundations are built.
 With expert educators, engaging learning methods,
 and a nurturing environment, we help children
-develop confidence, creativity, and lifelong learning skills.
-</p>
-</div>
-
-<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74">
-</div>
-</section>
-
-<section class="section">
-<h2 class="section-title">Our Programs</h2>
-
-<div class="programs">
-
-<div class="card">
+develop confidence, creativity and lifelong learning skills.
+</p></div><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74"></div></section><section class="section"><h2 class="section-title">Our Programs</h2><div class="programs"><div class="card">
 <h3>Playgroup</h3>
 <p>Fun-filled early learning experiences.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>Nursery</h3>
 <p>Building essential academic and social skills.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>Jolly Phonics</h3>
 <p>Interactive phonics and literacy development.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>Abacus</h3>
 <p>Enhancing concentration and mental math skills.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>Vedic Maths</h3>
 <p>Fast calculation techniques and logical thinking.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>Art Classes</h3>
 <p>Encouraging imagination and creativity.</p>
-</div>
-
-</div>
-</section>
-
-<section class="stats">
-<div class="stat">
+</div></div></section><section class="stats"><div class="stat">
 <h2>15+</h2>
 <p>Years of Excellence</p>
-</div>
-
-<div class="stat">
+</div><div class="stat">
 <h2>1000+</h2>
 <p>Happy Learners</p>
-</div>
-
-<div class="stat">
+</div><div class="stat">
 <h2>100%</h2>
 <p>Passionate Teaching</p>
-</div>
-</section>
-
-<section class="section testimonials">
-<h2 class="section-title">What Parents Say</h2>
-
-<div class="testimonial">
-"An amazing learning environment with caring teachers.
+</div></section><section class="section testimonials"><h2 class="section-title">What Parents Say</h2><div class="testimonial">"An amazing learning environment with caring teachers.
 My child loves coming to Kidz World every day."
-</div>
-</section>
 
-<section class="section contact">
-<h2 class="section-title">Visit Kidz World</h2>
-
-<p>Thane, Maharashtra</p>
+</div></section><section class="section contact"><h2 class="section-title">Visit Kidz World</h2><p>Thane, Maharashtra</p>
 <p>📞 +91 9619572528</p>
-<p>✉️ kidzworldlearningcentre@gmail.com</p>
-
-<a href="#" class="btn">Enquire Now</a>
-</section>
-
-<footer>
-
-<p><strong>Follow Us</strong></p>
-
-<p>
+<p>✉️ kidzworldlearningcentre@gmail.com</p><br><a href="contact.html" class="btn">
+Enquire Now
+</a></section><footer><p><strong>Follow Us</strong></p><br><p>
 <a href="https://www.instagram.com/kidzworldlearningcentre?igsh=MWFhYWNtZ2Jrbmt1Mw==" target="_blank">
 📸 Instagram
 </a>
-</p>
-
-<p>
+</p><br><p>
 <a href="https://youtube.com/@sheetalbhadra-d6f?si=b04bxcBc0caNkT2R" target="_blank">
 ▶️ YouTube
 </a>
-</p>
-
-<br>
-
-<p>
+</p><br><p>
 © 2026 Kidz World | Building Future-Ready Minds
-</p>
-
-</footer>
-<script>
-console.log("Welcome to Kidz World");
-</script>
-
-</body>
+</p></footer></body>
 </html>
