@@ -31,11 +31,23 @@ box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo{
+display:flex;
+align-items:center;
+gap:12px;
 font-size:28px;
-font-weight:bold;
+font-weight:700;
 color:#B08D57;
 }
 
+.logo img{
+height:55px;
+width:auto;
+border-radius:12px;
+}
+
+.logo span{
+letter-spacing:0.5px;
+}
 nav a{
 text-decoration:none;
 color:#333;
@@ -107,7 +119,10 @@ margin-top:40px;
 
 <header>
 
-<div class="logo">Kidz World</div>
+<div class="logo">
+    <img src="logo.png" alt="Kidz World Logo">
+    <span>Kidz World</span>
+</div>
 
 <nav>
 <a href="index.html">Home</a>
